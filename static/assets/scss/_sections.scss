@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  //text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--accent-color);
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/stats';
+@import 'sections/skills';
+@import 'sections/resume';
+@import 'sections/portfolio';
+@import 'sections/services';
+@import 'sections/testimonials';
+@import 'sections/contact';
+@import 'sections/portfolio-details';
+@import 'sections/service-details';
+@import 'sections/starter-section';
